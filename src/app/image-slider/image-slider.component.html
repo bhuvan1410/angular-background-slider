@@ -1,0 +1,9 @@
+<div class="image-slider">
+    <div
+      *ngFor="let image of images; let i = index"
+      [class.active]="i === currentIndex"
+      class="slide"
+      [style.backgroundImage]="'url(' + image + ')'"
+    ></div>
+  </div>
+  
